@@ -1,4 +1,4 @@
-body{
+body {
   position: relative;
   padding: 0;
   margin: 0;
@@ -9,12 +9,12 @@ body{
   box-sizing: border-box;
   overflow: hidden;
 }
-.blur-cicle{
+.blur-cicle {
   position: relative;
   width: 100%;
   height: 100%;
 
-  :is(.circle-1, .circle-2, .circle-3){
+  :is(.circle-1, .circle-2, .circle-3) {
     position: absolute;
     width: 50vw;
     height: 50vw;
@@ -23,13 +23,12 @@ body{
     filter: blur(150px);
   }
 
-  .circle-1{
+  .circle-1 {
     top: 0;
     left: 0;
-
   }
 
-  .circle-2{
+  .circle-2 {
     top: 10%;
     right: 0;
     width: 35vw;
@@ -37,7 +36,7 @@ body{
     background-color: #555c5d50;
   }
 
-  .circle-3{
+  .circle-3 {
     bottom: 0;
     left: 40%;
     width: 20vw;
@@ -45,7 +44,7 @@ body{
   }
 }
 
-.container{
+.container-landing {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -55,8 +54,12 @@ body{
   align-items: center;
   z-index: 1;
   gap: 20px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 
-  .btn{
+  .btn-link {
     display: block;
     width: 100px;
     padding: 10px 16px;
@@ -70,11 +73,11 @@ body{
   }
 }
 
-#countdown-timer{
+#countdown-timer {
   display: flex;
   gap: 20px;
 
-  .box-timer{
+  .box-timer {
     height: 150px;
     width: 150px;
     backdrop-filter: blur(10px);
@@ -84,87 +87,22 @@ body{
     border-radius: 10px;
     place-items: center;
 
-    .numbers{
-
-
-      & h2{
+    .numbers {
+      & h2 {
         font-size: 3rem;
       }
     }
 
-    .text{
-     background-color: #030c0b;
-     width: 100%;
-     text-align: center;
+    .text {
+      background-color: #030c0b;
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
     }
   }
 }
 
-
-
-/* .container{
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  place-items: center;
-  width: 100%;
-}
-
-.left-box-img{
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.box-img{
-  width: 100%;
-}
-
-.right-box-img{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-}
-
-.box-img-1{
-  position: relative;
-  width: 100%;
-  height: auto;
-}
-
-.img-1{
-  object-fit: contain;
-  width: 100%;
-}
-
-.box-img-2{
-  position: relative;
-  width: 100%;
-  height: auto;
-}
-
-.img-2{
-  object-fit: contain;
-  width: 100%;
-}
-
-
-.btn{
-  display: block;
-  padding: 10px 16px;
-  border-radius: 10px;
-  text-decoration: none;
-  background: #3998E0;
-  min-width: 100px;
-  text-align: center;
-  color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 700;
-} */
-
-#particles-js{
+#particles-js {
   position: absolute;
   width: 100%;
   height: 100%;
