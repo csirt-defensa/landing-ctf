@@ -1,4 +1,5 @@
 let countDownDate = new Date('Oct 31, 2023 09:00:00').getTime()
+let $countdown = document.getElementById('countdown-timer')
 let $countdownDays = document.getElementById('days')
 let $countdownHours = document.getElementById('hours')
 let $countdownMinutes = document.getElementById('minutes')
@@ -30,5 +31,6 @@ let x = setInterval(function () {
 	// If the count down is over, write some text
 	if (distance < 0) {
 		clearInterval(x)
+		$countdown.style.display = 'none'
 	}
 }, 1000)
